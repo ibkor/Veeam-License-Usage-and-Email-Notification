@@ -1,9 +1,11 @@
 # License-Usage-and-Email-Notification-Scripts
 
 Overview
+
   This repository contains two PowerShell scripts designed to enhance the management of Veeam licenses and facilitate the sending of usage reports via email.
 
 Setup Script
+
   This script collects and encrypts email credentials and SMTP server details, saving them to a JSON file. This allows for secure storage of sensitive information used for sending email notifications.
 
 EM License Script 
@@ -53,13 +55,13 @@ How to Use
   - Step 1: Setup Script
     - Open PowerShell as an administrator.
     - Navigate to the directory containing the setup script.
-    - Run the script: powershell `.\setup_script.ps1`
+    - Run the script: powershell `.\SetupEmailEM.ps1`
     - Follow the prompts to enter your email details and save the configuration.
 
   - Step 2: License Consumption and Email Script
     - Ensure that the setup script has been executed and the JSON file is created with the necessary credentials.
     - Open PowerShell. Navigate to the directory containing the license consumption script. 
-    - Run the script: powershell `.\license_consumption_script.ps1`
+    - Run the script: powershell `.\EMlicense.ps1`
       
 Notes
   - Ensure that you have the correct permissions to run these scripts, especially in environments with security restrictions.
