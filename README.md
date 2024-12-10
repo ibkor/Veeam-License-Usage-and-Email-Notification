@@ -9,9 +9,11 @@ Setup Script
   This script collects and encrypts email credentials and SMTP server details, saving them to a JSON file. This allows for secure storage of sensitive information used for sending email notifications.
 
 EM License Script 
+
   This script retrieves the current license usage from Veeam, creates a summary of the license consumption for Virtual Machines (VMs), servers, and applications, and then sends this summary via email to designated recipients.
 
 Problem Statement
+
   When managing multiple Veeam Backup & Replication (VBR) Servers, there can be a significant challenge regarding accurate license consumption reporting. If the same VMs are backed up by more than one VBR Server over time, each individual VBR       Server will register license consumption for these VMs. This results in an incorrect summary of license consumption across VBR Servers, as Veeam licenses each unique VM only once. Although the Enterprise Manager provides accurate license          consumption data, it currently lacks the functionality to send notification emails regarding this information.
 
 These scripts have been created to address this shortcoming by:
