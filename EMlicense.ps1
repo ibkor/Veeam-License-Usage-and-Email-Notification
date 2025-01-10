@@ -1,4 +1,5 @@
-﻿$date = Get-Date -format "dd-MM-yyyy"
+# This project is licensed under the MIT License - see the LICENSE file for details.
+$date = Get-Date -format "dd-MM-yyyy"
 $Applications = 0; $Servers = 0; $VMs = 0
 $licinfo = gwmi -namespace root\veeamem -Class License
 $licusage = $licinfo.GetDetailedLicensedInstancesCounters()
