@@ -1,4 +1,5 @@
-﻿#set and save the encryption key
+# This project is licensed under the MIT License - see the LICENSE file for details.
+#set and save the encryption key
 $key = 0..255 | Get-Random -Count 32 | %{[byte]$_}
 $keyString = ($key -join ',') 
 [System.Environment]::SetEnvironmentVariable("MyKey", $keyString, [System.EnvironmentVariableTarget]::User)
